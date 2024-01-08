@@ -4,7 +4,7 @@ const { ethers, JsonRpcProvider } = require('ethers')
 const provider = new JsonRpcProvider(config.rpc)
 
 const ERC20ABI = require('./ETC20ABI.json')
-const USDC = new ethers.Contract("", ERC20ABI, provider)
+const USDC = new ethers.Contract("0x9FD21bE27A2B059a288229361E2fA632D8D2d074", ERC20ABI, provider)
 
 const client = new Client({
     intents: [
